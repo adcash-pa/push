@@ -1,7 +1,9 @@
 body {
   background-image: linear-gradient(to right,#7f53ac 0,#657ced 100%);
   overflow: hidden;
+  margin: 0;
 }
+
 .box {
   display: block;
   margin: 15% auto;
@@ -10,28 +12,24 @@ body {
   color: #fff;
 }
 
-
-
 .btn  {
   display: block;
   padding: 12px 24px;
-  border: #fff 2px solid;
+  border: #fff 3px solid;
   max-width: 160px;
   margin: 0 auto;
   border-radius: 4px;
   color: #fff;
   text-decoration: navajowhite;
   font-size: 24px;
-  transition: all 0.15s;
-}
-
-.btn:hover {
+  transition: all 0.05s;
   background: #fff;
   color: #7267cc;
 }
 
 .btn:active {
   background: #e3ddff;
+  scale: 0.97;
 }
 
 .loader {
@@ -97,4 +95,70 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+/* --- button animation --- */
+
+a {
+  text-decoration:none;
+  color:#ffff;
+}
+
+#round {
+    position: absolute;
+    border: 3px solid #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    left: 180px;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.05s;
+}
+
+#round.show {
+  opacity: 1;
+}
+
+#cta{
+    width:100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+#cta .arrow {
+  left:
+  28%;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  margin-left:0px;
+  width: 36px;
+  height: 42px;
+  background-size: contain;
+  top:25px;
+}
+
+.second {
+  margin-top: 8px;
+}
+
+.next {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjA4LjI4NiIgd2lkdGg9IjE4MC40NjYiPjxwYXRoIGQ9Ik04NC4zNTggMi43NTdMMS41MDMgMTAyLjQ1OWE2LjUwOSA2LjUwOSAwIDAwNS4wMDYgMTAuNjY4aDI2LjU2NnY4NS43NDNhOS40MTYgOS40MTYgMCAwMDkuNDE2IDkuNDE2aDk1LjQ4NWE5LjQxNiA5LjQxNiAwIDAwOS40MTYtOS40MTZ2LTg1Ljc0M2gyNi41NjZhNi41MDkgNi41MDkgMCAwMDUuMDA1LTEwLjY2OEw5Ni4xMSAyLjc1N2E3LjY0IDcuNjQgMCAwMC0xMS43NTEgMHoiIGZpbGw9IiNmZmYiIHN0cm9rZS13aWR0aD0iLjU4MyIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+  0% {opacity: 1; transform: translateY(-7px);}
+  50% {opacity: 1; transform: translateY(0px);}
+  100% {opacity: 1; transform:translateY(-7px);}
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:0.7s;
+    animation-iteration-count:infinite;
+    animation-timing-function: sine;
 }
