@@ -15,10 +15,9 @@
 
 <script type="text/javascript">
   function scale() {
-    document.getElementById('yes').style.scale = '1.1';
+    document.getElementById('yes').style.webkitTransform  = 'scale(1.1)';
     setTimeout(function(){
-      console.log('OFF!');
-      document.getElementById('yes').style.scale = '1';
+      document.getElementById('yes').style.webkitTransform  = 'scale(1)';
     }, 200);
   }
   setInterval(scale, 2500);
