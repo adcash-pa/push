@@ -29,7 +29,7 @@ body {
 
 .btn:active {
   background: #e3ddff;
-  scale: 0.97;
+  transform: scale(0.97);
 }
 
 .loader {
