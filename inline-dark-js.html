@@ -15,9 +15,9 @@
 
 <script type="text/javascript">
   function scale() {
-    document.getElementById('yes').style.webkitTransform  = 'scale(1.1)';
+    document.getElementById('yes').style.transform  = 'scale(1.1)';
     setTimeout(function(){
-      document.getElementById('yes').style.webkitTransform  = 'scale(1)';
+      document.getElementById('yes').style.transform  = 'scale(1)';
     }, 200);
   }
   setInterval(scale, 2500);
