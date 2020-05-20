@@ -100,15 +100,17 @@ p span {
   animation-iteration-count:infinite;
   animation-timing-function:linear;
   height: 150px;
-  width: 300%;
+  width: 100%;
   background-position: center center;
+  transform: translateX(20%);
 }
 
 
 
 @keyframes bounceAlpha {
-  0%   {opacity: 0; transform: translateX(150px)    scale(1);}
-  50%  {opacity: 1; transform: translateX(-150px)    scale(1);}
-  65%  {opacity: 0; transform: translateX(-250px)    scale(1);}
-  100% {opacity: 0; transform: translateX(-400px) scale(1);}
+  0%     {opacity: 1; transform: translateX(35%)    }
+  100%   {opacity: 0; transform: translateX(-500px)    }
+  /* 50%  {opacity: 1; transform: translateX(-250px)    }
+  65%  {opacity: 0; transform: translateX(-250px)    }
+  100% {opacity: 0; transform: translateX(250px) } */
 }
