@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Allow to continue</title>
+</head>
+<body>
+  <div id="chevron-header">
+    <div class="center-con">
+      <div class="round">
+          <div id="cta">
+              <span class="arrow primera next "></span>
+              <span class="arrow segunda next "></span>
+          </div>
+      </div>
+    </div>
+    <div class="chevron-footer">
+      <p>Allow notifications</p>
+    </div>
+  </div>
+
+  <div class="box" id="box" >
+    <div class="box-header">
+      <p>Allow notifications</p>
+    </div>
+    <div class="content">
+      <div class="bell"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="bell-icon"><g class="style-scope yt-icon"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path></g></svg></div>
+
+      <p>Just one more step to access your content!</p>
+      <p><span>Click the <b>Next</b> button below, then click on <b>Allow</b>.</span></p>
+      <a class="btn" onclick="addClass(this)" href="#">Next</a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  function addClass() {
+    var a = document.getElementById('chevron-header');
+    var n = document.getElementById('box')
+    a.style.height = '150px';
+    n.style.opacity = '0';
+  }
+  </script>
+</body>
+</html>
